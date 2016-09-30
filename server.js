@@ -20,12 +20,12 @@ var articleone = {
                This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.
            </p>`
 };
-function createtemplate (data) {
+function createTemplate (data) {
     var title = data.title;
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
-var htmltemplate = `<html>
+var htmlTemplate = `<html>
     <head>
       <title>
           s{title}
@@ -60,7 +60,7 @@ app.get('/', function (req, res) {
  });
 
 app.get('/article-one',function(req, res){
-  res.send(createtemplate(article-one));
+  res.send(createTemplate(article-one));
 });
 
 app.get('/article-two',function(req, res){
