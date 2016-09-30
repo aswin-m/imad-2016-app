@@ -10,7 +10,7 @@ var articleone = {
   title:"ARTICLE ONE I ASWIN DAS-M",
   heading: "ARTICLE ONE",
   DATE: "SEP 5,2016",
-  content:`          <p>
+  content:` <p>
                This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.This is my article-one content.
            </p>
            <p>
@@ -54,7 +54,7 @@ var htmlTemplate = `<html>
 </html>
 `;
 return htmlTemplate;
-} 
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
  });
