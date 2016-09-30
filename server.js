@@ -41,7 +41,7 @@ var htmlTemplate = `<html>
       </div>
        <hr/>
       <h3>
-          s${heading}
+          ${heading}
       </h3>
        <div>
            ${date}
