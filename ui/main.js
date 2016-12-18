@@ -4,8 +4,7 @@ var counter = 0;
 
 button.onclick = function () {
    
-    //Create a request oobject 
-    // Make a request to the counter endpoint
+    // Create a request object
     var request = new XMLHttpRequest();
     
     
@@ -25,3 +24,16 @@ button.onclick = function () {
    request.open('GET', 'http://http://aswin-m.imad.hasura-app.io/counter',true);
    request.send(null);
 };
+
+// submit name
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function () {
+    // Make a request to the server and  send the name
+    // capture a list of names and render it as a list
+    var names = ['name1', 'name2','name3'];
+    var list = '';
+    for (var i=0; )
+    };    
+    
